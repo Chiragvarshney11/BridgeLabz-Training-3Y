@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Student Registration Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        h1{
+           display:flex;
+            justify-content: center; 
+        }
+        form{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <body>
+       <h1>Student Registration Form</h1>
+
+       <form action="">
+        <table border="1" cellpadding ="10" cellspacing ="2">
+            <thead>
+                <tr>
+                    <th colspan="2">Registration Form</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="name">Full Name: </label></td>
+                    <td><input style="width:250px"  type="text" id="name" placeholder="Enter Full Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input style="width:250px"  type="email" id="email" placeholder="Enter Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phoneno">Phone Number: </label></td>
+                    <td><input  style="width:250px"   type="tel" id="phoneno" placeholder="Enter Contact Details"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date-of-birth: </label></td>
+                    <td><input style="width:250px"   type="date" id="dob"></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td>
+                        
+                        <input type="radio" id="male" name="gender" value="male" >
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Others</label>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Skills:</td>
+                    <td>
+                        <input type="checkbox" id="html" name="skills" value="html"> <label for="html">HTML</label>
+                        <input type="checkbox" id="css" name="skills" value="css"> <label for="css">CSS</label>
+                        <input type="checkbox" id="js" name="skills" value="javascript"> <label for="js">JavaScript</label>
+                        <input type="checkbox" id="react" name="skills" value="react"> <label for="react">React</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="course">Course: </label></td>
+                    <td>
+                        <select name="Courses" id="course">
+                            <option value="">--Select Course--</option>
+                            <option value="web-dev">Full Stack development</option>
+                            <option value="DSA">DSA</option>
+                            <option value="GenAI">GenAI</option>
+                            <option value="AgenticAI">AgenticAI</option>
+                            <option value="DAA">DAA</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea name="Address" id="address" style="height: 50px; width:250px;" placeholder="Enter Your Address"></textarea></td>
+                </tr>
+                
+            
+                <tr>
+                    <td>
+                        <label for="file">Upload Resume:</label>
+                        
+                    </td>
+                    <td>
+                        <input type="file" name="files" id="file" placeholder="Choose File">
+                    </td>
+                </tr>
+                
+
+            </tbody>
+            <tfoot>
+                <th>
+                    <td><button>Register</button>
+                    <button>Reset</button></td>
+                </th>
+            </tfoot>
+            
+        </table>
+       </form>
+    </body>
+</html>
