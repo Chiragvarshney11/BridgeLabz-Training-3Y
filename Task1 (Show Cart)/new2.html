@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+         <style>
+            .container{
+                    width: 450px;
+                    background: white;
+                    
+                    overflow: hidden;
+                    margin:auto;
+                }
+               
+                .content{
+                    padding: 40px 20px 25px;
+                }
+                .content p{
+                    display: inline-block;
+                    font-size:20px;
+                    margin:10px;
+                }
+                .content h1{
+                    margin: 10px;
+                }
+                .content h2{
+                    margin: 10px;
+                }
+                button{
+                    margin:10px;
+                }
+                .img-sec{
+                    position:relative;
+
+                    width: 100px;
+                    top:20px;
+                    left:20px;
+                    
+                }
+                .img-sec img{
+                    height: 200px;
+                    width:300px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+                .heart{
+                    position:absolute;
+                    top:4px;
+                    left:250px;
+                    font-size:20px;
+                    border-radius: 15px;
+                }
+                .heart:hover{
+                    transform: scale(1.1);
+                    background: #f36060;
+                    cursor: pointer;
+                }
+                .offer{
+                    border: 2px solid black;
+                    border-radius: 40px;
+                    color: white;
+                    background-color: rgba(238, 42, 42, 0.767);
+                    position:absolute;
+                    top:15px;
+                    left:10px;
+                    font-size:12px;
+                    padding:4px 8px;
+                }
+                .price{
+                    display: flex;
+                }
+                .price h5{
+                    font-weight: 50;
+                }
+                .cart{
+                    width:70%;
+                    margin: 0 0 0 10px;
+                    padding: 5px 0 5px 0;
+                    border-radius:5px;
+                    color: white;
+                    background-color: black;
+                    cursor:pointer;
+                }
+               
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="img-sec">
+                <img src="image.jpeg" alt="shoes-img">
+                <span class="offer">20% OFF</span>
+                <button class="heart" type="submit">♡</button>
+            </div>
+            
+            <div class="content">
+                <h1>SPORTS SHOES</h1>
+                <h2> <b>Premium Running Shoes</b></h2>
+                <p>⭐⭐⭐⭐⭐ (120)</p>
+                <span class="price">
+                    <h2>Rs 1,999</h2> 
+                    <h5><del>Rs 2,499</del></h5>
+                </span>
+                <button class="cart">Add To Cart</button>
+            </div>
+        </div>
+      
+    </body>
+</html>
