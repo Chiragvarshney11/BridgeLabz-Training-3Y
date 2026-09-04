@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete CSS Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Nova Studio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p>CREATIVE DIGITAL STUDIO</p>
+                <h2>Build Something Remarkable</h2>
+                <a href="#services" class="hero-button">Explore Services</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-text">
+                <p class="section-label">ABOUT US</p>
+                <h2>Ideas into Digital Experiences</h2>
+                <p>
+                    Nova Studio combines thoughtful design and modern web development
+                    to create websites that are useful, accessible and visually clear.
+                </p>
+                <p>
+                    We focus on responsive layouts, strong visual hierarchy and
+                    maintainable front-end code.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="https://picsum.photos/id/48/800/600" alt="Creative workspace">
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-heading">
+                <p class="section-label">WHAT WE DO</p>
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="service-container">
+                <article class="service-box">
+                    <h3>Web Design</h3>
+                    <p>Clean and responsive layouts designed around users and content.</p>
+                </article>
+
+                <article class="service-box">
+                    <h3>Development</h3>
+                    <p>Semantic HTML and efficient CSS for reliable responsive websites.</p>
+                </article>
+
+                <article class="service-box">
+                    <h3>UI Systems</h3>
+                    <p>Consistent components, spacing and typography for scalable interfaces.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div>
+                <p class="section-label">GET IN TOUCH</p>
+                <h2>Let's Work Together</h2>
+                <p>Have a project idea? Send us a message.</p>
+            </div>
+
+            <form>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Tell us about your project"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nova Studio. All rights reserved.</p>
+    </footer>
+
+    <div class="floating-badge">CSS PROJECT</div>
+</body>
+</html>
