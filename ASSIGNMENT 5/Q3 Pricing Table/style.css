@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #f8fafc;
+    color: #172033;
+}
+
+.pricing-page {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+}
+
+header > p:last-child {
+    color: #64748b;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.plan {
+    flex: 1;
+    min-height: 480px;
+    padding: 35px;
+    background: #ffffff;
+    border: 2px solid #dbe2ea;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: scale(1.04);
+    background-color: #eff6ff;
+    box-shadow: 0 16px 35px rgba(15, 23, 42, 0.14);
+}
+
+.plan h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.price span {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #64748b;
+}
+
+.plan ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.plan li {
+    padding: 11px 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.plan li::before {
+    content: "✓ ";
+    font-weight: bold;
+}
+
+.plan a {
+    margin-top: auto;
+    display: block;
+    text-align: center;
+    padding: 13px;
+    border-radius: 9px;
+    background: #172033;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.plan a:hover {
+    background-color: #2563eb;
+}
+
+/* Popular plan has a stronger border and badge */
+.popular {
+    position: relative;
+    border: 3px solid #2563eb;
+}
+
+.badge {
+    position: absolute;
+    top: -14px;
+    right: 20px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .plan {
+        min-height: 430px;
+    }
+}
