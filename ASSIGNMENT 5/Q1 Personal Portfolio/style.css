@@ -1,0 +1,166 @@
+/* Reset and basic page setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #172033;
+}
+
+/* Flexbox keeps the footer at the bottom */
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fixed header remains visible while scrolling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 72px;
+    padding: 1rem 5%;
+    background-color: #172033;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+}
+
+/* vh and % units are used in the main section */
+.hero {
+    min-height: 85vh;
+    padding: 120px 8% 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.bio {
+    width: 55%;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0369a1;
+    margin-bottom: 1em;
+}
+
+.bio h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.bio > p:last-child {
+    max-width: 650px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.profile {
+    width: 32%;
+    text-align: center;
+}
+
+.profile img {
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.about,
+.contact {
+    padding: 5rem 8%;
+    min-height: 30vh;
+}
+
+.about {
+    background-color: #ffffff;
+}
+
+.contact {
+    background-color: #e0f2fe;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p,
+.contact p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Footer uses flexbox through the parent .page */
+footer {
+    margin-top: auto;
+    padding: 1.2rem;
+    text-align: center;
+    background-color: #172033;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 1rem 4%;
+    }
+
+    nav {
+        gap: 0.8rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 130px;
+    }
+
+    .bio,
+    .profile {
+        width: 100%;
+    }
+
+    .bio h2 {
+        font-size: 2.2rem;
+    }
+}
