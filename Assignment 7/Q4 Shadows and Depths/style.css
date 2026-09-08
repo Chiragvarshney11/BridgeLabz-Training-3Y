@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    padding: 35px;
+}
+
+h1,
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    min-height: 220px;
+    padding: 30px;
+    border-radius: 18px;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+.shadow-one {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.shadow-one:hover {
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.22);
+}
+
+.shadow-two {
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.20);
+}
+
+.shadow-two:hover {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.30);
+}
+
+.shadow-three {
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.10),
+        0 18px 30px rgba(0, 0, 0, 0.14);
+}
+
+.shadow-three:hover {
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.15),
+        0 28px 45px rgba(0, 0, 0, 0.25);
+}
