@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header,
+footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+main {
+    padding-top: 75px;
+    padding-bottom: 65px;
+}
+
+.gradient {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.linear {
+    background: linear-gradient(135deg, #2563eb, #7c3aed, #db2777);
+    background-attachment: fixed;
+}
+
+.radial {
+    background: radial-gradient(circle, #22c55e, #0f766e, #064e3b);
+}
+
+.gradient div {
+    max-width: 650px;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2);
+}
