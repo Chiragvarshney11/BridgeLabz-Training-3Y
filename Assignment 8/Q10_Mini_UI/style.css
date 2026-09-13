@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f8fafc);
+    color: #172033;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.card {
+    width: min(760px, 100%);
+    background: white;
+    padding: 28px;
+    border: 1px solid #dbe3ef;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.card img {
+    width: 220px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.content {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+input, select {
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input:focus, select:focus {
+    outline: 3px solid #bfdbfe;
+    border-color: #2563eb;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: #1d4ed8;
+}
+
+button:focus {
+    outline: 3px solid #93c5fd;
+}
+
+button.secondary {
+    background: #64748b;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #172554;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header, .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
