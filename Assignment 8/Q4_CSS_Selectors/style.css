@@ -1,0 +1,80 @@
+/* Element selector */
+p {
+    line-height: 1.6;
+}
+
+/* Class selector */
+.highlight {
+    background: #fef3c7;
+    padding: 10px;
+}
+
+/* ID selector */
+#special {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Descendant combinator */
+.parent p {
+    color: #047857;
+}
+
+/* Child combinator > */
+.items > li {
+    padding: 8px;
+}
+
+/* Adjacent sibling combinator + */
+.sibling-box p:first-child + p {
+    background: #dbeafe;
+}
+
+/* General sibling combinator ~ */
+.sibling-box p:first-child ~ p {
+    border-left: 4px solid #2563eb;
+    padding-left: 10px;
+}
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+header, footer {
+    text-align: center;
+    padding: 25px;
+    background: #172554;
+    color: white;
+}
+
+.card {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    color: #1d4ed8;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0 20px;
+}
