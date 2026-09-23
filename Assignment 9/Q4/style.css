@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+header, footer {
+    text-align: center;
+    padding: 24px;
+    background: #172554;
+    color: white;
+}
+
+.animation-area {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    overflow: hidden;
+}
+
+.box {
+    width: 130px;
+    padding: 18px 10px;
+    text-align: center;
+    background: #2563eb;
+    color: white;
+    border-radius: 10px;
+    animation: moveBox 3s ease-in-out infinite alternate;
+}
+
+.ball {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #f59e0b;
+    animation: bounce 1s ease-in-out infinite;
+    animation-delay: .3s;
+}
+
+.color-text {
+    animation: colorChange 2s ease-in-out infinite alternate;
+    animation-iteration-count: 6;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(-180px);
+    }
+    to {
+        transform: translateX(180px);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: #1d4ed8;
+        transform: scale(1);
+    }
+    to {
+        color: #b91c1c;
+        transform: scale(1.15);
+    }
+}
