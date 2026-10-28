@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <p class="eyebrow">JAVASCRIPT ASSIGNMENT 4</p>
+        <h1>Library Management System</h1>
+        <p>Search books by ISBN, issue available books, and return issued books.</p>
+    </header>
+    <main class="container">
+        <section class="panel"><h2>Issue a book</h2><form id="issue-form"><label for="isbn">Book ISBN</label><div class="search-row"><input id="isbn" name="isbn" required placeholder="Enter ISBN"><button type="submit">Issue book</button></div></form><p id="message" role="status"></p></section>
+<section class="panel"><div class="heading"><div><h2>Available books</h2><p>Books that have not been issued.</p></div><span id="count" class="pill"></span></div><div id="available" class="grid"></div></section>
+<section class="panel"><h2>All books</h2><div id="all-books" class="grid"></div></section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
