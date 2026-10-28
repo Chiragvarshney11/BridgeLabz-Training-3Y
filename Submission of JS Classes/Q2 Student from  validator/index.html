@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <p class="eyebrow">JAVASCRIPT ASSIGNMENT 4</p>
+        <h1>Student Form Validator</h1>
+        <p>Validate student details using JavaScript and regular expressions.</p>
+    </header>
+    <main class="container">
+        <section class="panel"><form id="student-form" novalidate>
+<div class="field"><label for="name">Full name</label><input id="name" name="name" type="text"><small id="name-error"></small></div>
+<div class="field"><label for="email">Email address</label><input id="email" name="email" type="email"><small id="email-error"></small></div>
+<div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" maxlength="10"><small id="phone-error"></small></div>
+<div class="field"><label for="password">Password</label><input id="password" name="password" type="password"><small id="password-error"></small></div>
+<button type="submit">Validate details</button><p id="status" role="status"></p></form></section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
