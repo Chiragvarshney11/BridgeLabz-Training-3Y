@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <p class="eyebrow">JAVASCRIPT ASSIGNMENT 4</p>
+        <h1>Movie Ticket Booking</h1>
+        <p>Validate booking details and generate a simple ticket confirmation.</p>
+    </header>
+    <main class="container">
+        <section class="panel"><form id="booking-form" novalidate>
+<div class="field"><label for="name">Full name</label><input id="name" name="name"><small id="name-error"></small></div>
+<div class="field"><label for="email">Email address</label><input id="email" name="email" type="email"><small id="email-error"></small></div>
+<div class="field"><label for="seats">Number of seats (1–10)</label><input id="seats" name="seats" type="number" min="1" max="10"><small id="seats-error"></small></div>
+<button type="submit">Book tickets</button><p id="status" role="status"></p></form></section>
+<section id="ticket" class="panel ticket" hidden><p class="eyebrow">BOOKING CONFIRMED</p><h2>Your movie ticket</h2><div id="ticket-details"></div></section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
