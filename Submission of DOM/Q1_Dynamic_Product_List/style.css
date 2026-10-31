@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f5f9; color: #202938; }
+.container { width: min(650px, 92%); margin: 55px auto; padding: 28px; background: white; border-radius: 12px; box-shadow: 0 8px 25px #18243a14; }
+h1 { margin-top: 0; }
+form { display: flex; gap: 10px; }
+input { flex: 1; min-width: 0; padding: 12px; border: 1px solid #cbd2dc; border-radius: 7px; font-size: 16px; }
+button { padding: 10px 14px; border: 0; border-radius: 7px; background: #2457d6; color: white; cursor: pointer; }
+ul { list-style: none; padding: 0; margin: 22px 0 0; }
+li { display: flex; align-items: center; gap: 9px; padding: 12px 0; border-bottom: 1px solid #e8ebf0; }
+.product-name { flex: 1; overflow-wrap: anywhere; }
+li input { flex: 1; }
+.edit-btn { background: #d58a12; }
+.delete-btn { background: #d43b45; }
+#emptyMessage { color: #697586; }
