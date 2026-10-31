@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <h1>Registration</h1>
+    <p id="stepLabel">Step 1 of 3 — Name</p>
+
+    <form id="multiStepForm" novalidate>
+      <section class="step active" data-step="0">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name">
+        <small class="error"></small>
+      </section>
+
+      <section class="step" data-step="1" hidden>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <small class="error"></small>
+      </section>
+
+      <section class="step" data-step="2" hidden>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="new-password">
+        <small class="error"></small>
+      </section>
+
+      <div class="actions">
+        <button id="backButton" type="button" disabled>Back</button>
+        <button id="nextButton" type="button">Next</button>
+      </div>
+    </form>
+    <section id="summary" hidden>
+      <h2>Form completed</h2>
+      <p id="summaryText"></p>
+      <button id="restartButton" type="button">Start again</button>
+    </section>
+  </main>
+</body>
+</html>
