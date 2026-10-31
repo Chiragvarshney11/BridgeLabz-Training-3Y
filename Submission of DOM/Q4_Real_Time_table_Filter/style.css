@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 25px; font-family: Arial, sans-serif; background: #f3f5f9; color: #202938; }
+.container { width: min(760px, 100%); margin: 35px auto; padding: 28px; background: white; border-radius: 12px; box-shadow: 0 8px 25px #18243a14; }
+input { width: 100%; padding: 12px; border: 1px solid #cbd2dc; border-radius: 7px; font-size: 16px; }
+#resultMessage { min-height: 20px; color: #64748b; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 13px; border-bottom: 1px solid #e8ebf0; }
+th { background: #eef2fa; }

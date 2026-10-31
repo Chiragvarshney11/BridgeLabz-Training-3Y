@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Student Filter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Student Directory</h1>
+    <input id="searchInput" type="search" placeholder="Search by name, branch or CGPA..." aria-label="Search students">
+    <p id="resultMessage" aria-live="polite"></p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+        <tbody id="studentRows">
+          <tr><td>Aarav Sharma</td><td>CSE</td><td>8.7</td></tr>
+          <tr><td>Diya Gupta</td><td>ECE</td><td>9.1</td></tr>
+          <tr><td>Rohan Verma</td><td>IT</td><td>7.9</td></tr>
+          <tr><td>Ananya Singh</td><td>CSE</td><td>9.4</td></tr>
+          <tr><td>Kabir Mehta</td><td>ME</td><td>8.2</td></tr>
+          <tr><td>Meera Joshi</td><td>ECE</td><td>8.8</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
